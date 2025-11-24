@@ -960,4 +960,8 @@ footer img {
     .text__contacto{
         grid-column: 1 / 3;
     }
+    /* padding para que el navbar no tape el texto al inicio en cada pagina */
+    .principal__socios,.principal__nosotros,.main__turnos,.main__contacto{
+        padding-top: 180px;
+    }
 }
