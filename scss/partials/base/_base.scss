@@ -1,0 +1,7 @@
+@use "../utilities/variables";
+
+body {
+    font-family: "Open Sans";
+    overflow-x: hidden;
+    background-color: variables.$antiflash-white;
+}

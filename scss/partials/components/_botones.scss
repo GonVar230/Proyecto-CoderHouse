@@ -1,0 +1,36 @@
+@use "../utilities/mixin";
+@use "../utilities/variables";
+
+// Botones del  index
+.text__section--arriba a {
+    @include mixin.btn-basic(
+    variables.$antiflash-white,
+    variables.$uranian-blue,
+    variables.$air-superiority-blue
+    );
+}
+
+.separador div a {
+    @include mixin.btn-basic(
+    variables.$white,
+    variables.$hover-uranian-blue,
+    variables.$air-superiority-blue
+    );
+}
+
+// El segundo es del html de socios
+.cont__text--dos a,.carta__beneficio--text a {
+    @include mixin.link-underline;
+}
+
+
+// Botones socios
+.principal__socios{
+    div{
+        a{
+            @include mixin.btn-basic(variables.$white,
+            variables.$hover-uranian-blue,
+            variables.$air-superiority-blue)
+        }
+    }
+}

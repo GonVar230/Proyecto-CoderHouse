@@ -1,0 +1,11 @@
+// Carpeta Base
+@use "./partials/base/reset";
+@use "./partials/base/typography";
+@use "./partials/base/base";
+
+// Carpeta Components
+@use "./partials/components/header";
+@use "./partials/components/index"; // cosas unicas del index
+@use "./partials/components/botones";
+@use "./partials/components/separedores";
+@use "./partials/components/socios"// cosas unicas de socios

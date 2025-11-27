@@ -1,0 +1,77 @@
+@use "../utilities/variables";
+@use "../utilities/mixin";
+
+// complementando el separador
+.encabezado__socios {
+    @include mixin.container;
+    margin-top: 1rem;
+    text-align: center;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+    h2{
+        font-size: 2rem;
+        color: variables.$yinmn-blue;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+}
+
+.texto__dif {
+    color: variables.$black-light;
+    padding: 0 2rem;
+    padding-bottom: 1.5rem;
+}
+
+
+.grid__socios {
+    display: grid;
+    @include mixin.container;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1rem;
+}
+
+.carta__beneficio {
+    background-color: variables.$white;
+    padding: 2rem;
+    border-radius: 10px;
+    min-height: 200px;
+    @include mixin.flex-container(column,start,start);
+    text-align: start;
+}
+
+.ubicacion__carta--beneficio {
+    @include mixin.flex-container(null,null,center);
+    gap: .7rem;
+    padding-bottom: 1rem;
+    i{
+        color: variables.$yinmn-blue;
+        font-size: 1.2rem;
+    }
+    h3{
+        color: variables.$yinmn-blue;
+        font-size: 1.4rem;
+    }
+    p{
+        line-height: 26px;
+        letter-spacing: .5px;
+        padding-right: 1rem;
+        margin-bottom: 1rem;
+        color: variables.$black-light;
+    }
+}
+
+// Ultimos 2  grids
+
+.carta__beneficio--img,.carta__beneficio--text {
+    background-color: transparent;
+}
+
+.carta__beneficio--img img {
+    max-width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.separacion {
+    padding-bottom: 1rem;
+}

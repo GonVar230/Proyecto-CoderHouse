@@ -1,0 +1,47 @@
+@use "../utilities/variables";
+@use "../utilities/mixin";
+
+.navbar{
+    @include mixin.container;
+    background-color: variables.$antiflash-white;
+    height: 15dvh;
+    z-index: 10;
+}
+
+header{
+    img{
+        height: 100px;
+    }
+    ul{
+        gap: clamp(1.3rem,5vw,2rem);
+    }
+}
+
+.link__logo {
+    transition: all .5s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.nav__link{
+    @include mixin.link-underline;
+}
+
+.navbar-toggler,.btn-close {
+    border: 1px solid variables.$black-light;
+    color: transparent;
+    transition: all .4s ease;
+    &:hover{
+        scale: 1.1;
+    }
+}
+
+.img__nav--responsive {
+    scale: .8;
+}
+
+.offcanvas-body {
+    margin-left: 1.5rem;
+}
