@@ -56,50 +56,54 @@
         </nav>
     </header>
 
-    <main class="main__turnos">
-        <!-- PARA UBICAR BIEN EL TITULO -->
-        <section class="text__turnos">
-            <h2>Solicitá tu turno</h2>
-            <p>En Clínica Vitala facilitamos el acceso a tu atención médica. Podés solicitar tu turno de forma rápida y sencilla completando el formulario o comunicándote directamente con nosotros.</p>
-        </section>
+    <main>
+        <section class="principal__turnos">
+            <section class="text__turnos">
+                <div>
+                    <h1>Solicitá tu turno</h1>
+                    <p>En Clínica Vitala facilitamos el acceso a tu atención médica. Podés solicitar tu turno de forma rápida y sencilla completando el formulario.</p>
+                </div>
+            </section>
 
         <!-- FORM RESERVAS -->
-        <section class="ubicando__form">
+            <section class="ubicando__form--reservas">
 
-            <h2>Formulario de Reserva</h2>
-            <form>
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
+                <h2>Formulario de Reserva</h2>
+                <form class="form__reservas">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
 
-                <label for="apellido">Apellido</label>
-                <input type="text" id="apellido" name="apellido" required placeholder="Apellido">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" required placeholder="Apellido">
 
-                <label for="telefono">Teléfono</label>
-                <input type="number" id="telefono" name="telefono" required placeholder="+598 91 321 456">
+                    <label for="telefono">Teléfono</label>
+                    <input type="number" id="telefono" name="telefono" required placeholder="+598 91 321 456">
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required placeholder="tucorreo@gmail.com">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="tucorreo@gmail.com">
 
-                <label for="fecha">Fecha de turno</label>
-                <input type="date" id="fecha" name="fecha" required>
+                    <label for="fecha">Fecha de turno</label>
+                    <input type="date" id="fecha" name="fecha" required>
 
-                <label for="horario">Horario de turno</label>
-                <input type="time" id="horario" name="horario" required>
+                    <label for="horario">Horario de turno</label>
+                    <input type="time" id="horario" name="horario" required>
                 
-                <label for="especialidad">Especialidad:</label>
-                <select id="especialidad" name="especialidad" required>
-                    <option value="general">Medicina General</option>
-                    <option value="pediatria">Pediatría</option>
-                    <option value="cardiologia">Cardiología</option>
-                    <option value="dermatologia">Dermatología</option>
-                    <option value="nutricionista">Nutricionista</option>
-                    <option value="fonoaudiología">Ginecología</option>
-                    <option value="urología">Urología</option>
-                </select>
+                    <label for="especialidad">Especialidad:</label>
+                    <select id="especialidad" name="especialidad" required>
+                        <option value="general">Medicina General</option>
+                        <option value="pediatria">Pediatría</option>
+                        <option value="cardiologia">Cardiología</option>
+                        <option value="dermatologia">Dermatología</option>
+                        <option value="nutricionista">Nutricionista</option>
+                        <option value="fonoaudiología">Ginecología</option>
+                        <option value="urología">Urología</option>
+                    </select>
 
                 <button type="submit">Reservar</button>
-            </form>
-            
+                </form>
+
+            </section>
+
         </section>
 
     </main>

@@ -34,3 +34,15 @@
         }
     }
 }
+
+// Boton de formulario reserva y contacto
+.form__reservas,.form__contacto{
+    button{
+        @include mixin.btn-basic(variables.$white,
+        variables.$hover-uranian-blue,
+        variables.$air-superiority-blue);
+        border: none
+    }
+}
+
+// Boton formulario contacto

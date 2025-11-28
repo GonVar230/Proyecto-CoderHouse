@@ -1,0 +1,96 @@
+@use "../utilities/mixin";
+@use "../utilities/variables";
+
+// Cards de doctores 
+.section__cards--medicos{
+    @include mixin.cards-nosotros;
+}
+
+.card__medico{
+    border-radius: 1rem;
+    width: 250px;
+    height: auto;
+    figure{
+        width: 100%;
+        height: auto;
+        background-color: variables.$uranian-blue;
+        border-radius: 1rem 1rem 0 0;
+        @include mixin.flex-container(null,null,end);
+        img{
+                width: 100%;
+                height: 260px;
+                object-fit: cover;
+        }
+    }
+}
+
+.card__medico{
+    div{
+        border: 1px solid variables.$uranian-blue;
+        border-radius: 0 0 1rem 1rem;
+        padding: 1rem;
+        h3{
+            color: var(--yinmn-blue);
+            font-size: 1.3rem;
+            padding-bottom: .3rem;
+        }
+        p {
+            color: variables.$black-light;
+            padding-bottom: .3rem;
+        }
+        span {
+            font-size: 1.3rem;
+            color: variables.$yinmn-blue;
+            font-weight: 600;
+        }
+    }
+}
+
+
+// cards de especialidades
+.contenedor__cards--especialidades{
+    @include mixin.flex-container(null,null,center);
+    @include mixin.cards-nosotros;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.card__especialidades {
+    @include mixin.flex-container(row,center,center);
+    height: 100px;
+    width: 350px;
+    border-radius: 10px;
+    border: 1px solid variables.$uranian-blue;
+    box-shadow: 1px 1px 2px 1px  #a3cef1ff;
+    figure{
+        width: 100px; 
+        height: 100px;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+    }
+    .text__especialidad {
+        flex: 1; 
+        text-align: center;
+        font-weight: bold;
+        color: variables.$yinmn-blue;
+        font-size: 1.7rem;
+        padding-top: 1rem;
+    }
+}
+// moviendo minimo algunas imagenes para que queden centradas
+.ubic__img--arriba{
+    transform: translateY(-5px);
+    scale: .96;
+}
+
+.ubic__img--abajo{
+    transform: translateY(5px);
+}
+
+.diferencial__img{
+    transform: scale(.9);
+}
+

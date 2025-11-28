@@ -5,7 +5,7 @@
 .separador{
     @include mixin.separador(2rem);
     div{
-        @include mixin.centrar-separador;
+        @include mixin.centrar-separador(700px);
         p {
             font-size: 2rem;
             color: variables.$antiflash-white;
@@ -14,13 +14,11 @@
     }
 }
 
-
-
 // Separador inicial de socios
 .principal__socios{
     @include mixin.separador(2rem);
     div{
-        @include mixin.centrar-separador;
+        @include mixin.centrar-separador(800px);
         h1 {
             font-size: 2.9rem;
             color: variables.$yinmn-blue;  // ✅ correcto
@@ -33,5 +31,46 @@
         }
     }
 }
+
+// separador inicial de nosotros y final
+.principal__nosotros ,.titulo__especialidades {
+    background-color: variables.$uranian-blue;
+    padding: 2rem;
+    margin-top: 3rem;
+    div{
+        @include mixin.centrar-separador(400px);
+        text-align: center;
+        h1{
+            font-size: 2.9rem;
+            color: variables.$yinmn-blue;
+            margin-bottom: 1rem;
+        }
+        p{
+            color: variables.$antiflash-white;
+            font-size: 1.4rem;
+        }
+    }
+}
+
+// inicio de turnos 
+.text__turnos{
+    @include mixin.separador(2rem);
+    div{
+        @include mixin.centrar-separador(800px);
+        text-align: center;
+    }
+    h1{
+        color: variables.$yinmn-blue;
+        margin-top: 1rem;
+        font-size: 3rem;
+    }
+    p{
+        color: variables.$white;
+        margin-bottom: 2rem;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+}
+
 
 
