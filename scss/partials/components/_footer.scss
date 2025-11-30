@@ -1,0 +1,80 @@
+@use "../utilities/mixin";
+@use "../utilities/variables";
+
+footer{
+    height: auto;
+    background-color: variables.$yinmn-blue;
+    margin-top: 1.5rem;
+    text-align: center;
+    padding: 0 .6rem;
+}
+
+.direccion__footer {
+    @include mixin.container;
+    @include mixin.flex-container(row,space-between,center);
+    flex-wrap: wrap;
+    height: 120px;
+}
+
+.direccion__footer div:first-of-type {
+    @include mixin.flex-container(null,center,center);
+    gap: 10px;
+    img{
+        height: clamp(3rem,6vw,4rem);
+    }
+    p{
+        color: variables.$antiflash-white;
+        font-size: clamp(.8rem,2vw,1rem);
+        transform: translateY(6px);
+    }
+
+}
+
+.contacto__footer {
+    display: flex;
+    gap: clamp(1rem, 5vw, 2rem);
+    cursor: pointer;
+    color: variables.$antiflash-white;
+
+    i {
+        font-size: clamp(1rem, 2vw, 1.5rem);
+        transition: all 0.3s ease;
+
+        &:hover {
+            opacity: 0.74;
+        }
+    }
+
+    // ICONOS ESPECÍFICOS
+    .bi-envelope,
+    .bi-facebook,
+    .bi-telephone,
+    .bi-geo-alt {
+        position: relative;
+
+        &::after {
+            content: attr(data-text);  /*Esto hace que el data-text  hace que el  contenido que se muestre sea lo que escribimos en html*/
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%) translateY(10px);
+            font-size: 0.8rem;
+            padding: 3px 6px;
+            border: 2px solid variables.$uranian-blue;
+            border-radius: 5px;
+            color: variables.$antiflash-white;
+            font-weight: bold;
+            visibility: hidden;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+
+        &:hover::after {
+            visibility: visible;
+            opacity: 1;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+

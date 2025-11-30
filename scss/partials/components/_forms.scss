@@ -1,56 +1,55 @@
 @use "../utilities/mixin";
 @use "../utilities/variables";
+@use "../utilities/extend";
 
 // Formulario de reservas
 .ubicando__form--reservas {
     @include mixin.flex-container(column,center,center);
-    @include mixin.centrar-separador(600px);
+    @include mixin.centrar-separador(750px);
     background-color: variables.$white;
     padding: 3rem;
     border-radius: 1rem;
     margin-top: 3rem;
-    h2{
+    h2 {
         margin-bottom: 2.5rem;
         color: variables.$yinmn-blue;
     }
 }
 
-.form__reservas{
-    display: flex;
-    flex-direction: column;
+.form__reservas {
+    @include mixin.flex-container(column,null,null);
     width: 100%;
-    label{
-        color: variables.$yinmn-blue;
-        margin-bottom: .5rem;
-        font-weight: 600;
-        font-size: 1.2rem;
-        text-align: start;
-        margin-left: .5rem;
+    label {
+        @extend %estilo-label
     }
-    select{
+    input {
+        @extend %estilo-input;
+    }
+    select {
         border: none;
         border-bottom: 2px solid variables.$uranian-blue;
         padding: 10px 0px 10px 10px;
         border-radius: 2rem;
         margin-bottom: 1.5rem;
     }
-    input{
-        @extend select;
-    }&:focus{
-        outline: none;
-        box-shadow: 0 4px 4px -2px #8fc2e6; 
-    }
 }
 
+
 // Formulario de contacto
-.ubicando__form--contacto{
-    @extend .ubicando__form--reservas;
-    min-width: 500px;
+.ubicando__form--contacto {
+    min-width: 450px;
     margin: 0;
 }
 
-.form__contacto{
-    @extend .form__reservas;
+.form__contacto {
+    @include mixin.flex-container(column,null,null);
+    label {
+        @extend %estilo-label;
+    }
+
+    input {
+        @extend %estilo-input;
+    }
     textarea {
         border: 2px solid variables.$uranian-blue;
         border-radius: 10px;
@@ -58,7 +57,7 @@
         resize: none;
         margin-bottom: 1rem;
         height: 200px;
-    }&:focus{
+    }&:focus {
         outline: none;
         box-shadow: 0 4px 4px -2px #8fc2e6; 
     }
@@ -69,8 +68,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows:  120px repeat(2, 1fr);
     gap: 1rem;
-    max-width: 1000px;
-    margin: 0 auto;
+    @include mixin.container;
     padding: 2rem;
 }
 
@@ -79,15 +77,15 @@
     grid-row: 1 ;
     margin-bottom: 5rem;
     @include mixin.flex-container(column,center,center);
-    h1{
+    h1 {
         color: variables.$yinmn-blue;
         font-size: 3rem;
         margin-bottom: .5rem;
     }
-    span{
+    span {
         color: variables.$uranian-blue;
     }
-    p{
+    p {
         color: variables.$black-light;
         font-size: 1.2rem;
     }
@@ -103,16 +101,14 @@
 }
 
 .contacto__mapa {
+    @include mixin.flex-container(column,center,center);
     grid-column: 3 / 4;
     grid-row: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 1rem;
     background-color: variables.$white;
     padding: 1.3rem;
-    figure{
-        img{
+    figure {
+        img {
             height: 240px;
             border-radius: 1rem;
         }
@@ -124,16 +120,16 @@
     background-color: variables.$white;
     padding: 1rem;
     border-radius: 1rem;
-    h3{
+    h3 {
         color: variables.$yinmn-blue;
         font-size: .9rem;
         margin-bottom: .3rem;
         font-weight: 700;
     }
-    span{
+    span {
         @extend h3;
     }
-    p{
+    p {
         color: variables.$black-light;
         margin-bottom: .3rem;
         margin-top: .4rem;

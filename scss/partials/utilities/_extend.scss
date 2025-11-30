@@ -1,0 +1,20 @@
+@use "../utilities/variables";
+
+// estilos de los formularios
+%estilo-label {
+    color: variables.$yinmn-blue;
+    margin-bottom: .5rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: start;
+    margin-left: .5rem;
+}
+
+%estilo-input {
+    border: none;
+    border-bottom: 2px solid variables.$uranian-blue;
+    padding: 10px 0 10px 10px;
+    border-radius: 2rem;
+    margin-bottom: 1.5rem;
+}
+

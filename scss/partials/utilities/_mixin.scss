@@ -78,7 +78,7 @@
 }
 
 @mixin cards-nosotros{
-    @include flex-container(nuell, center, center);
+    @include flex-container(null, center, center);
     @include container;
     flex-wrap: wrap;
     gap: 1rem;

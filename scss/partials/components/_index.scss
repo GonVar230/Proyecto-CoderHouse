@@ -67,7 +67,7 @@
 .cont__text{
     width: 55%;
     padding-right: 6rem;
-    }
+}
 
 .cont__img {
     width: 45%;
@@ -80,19 +80,17 @@
 }
 
 .cont__text,.cont__text--dos {
-    h2{
-        font-size: clamp(2.1rem,8vw,2.5rem);
-        color: var(--uranian-blue);
-        margin-bottom: 5px;
-    }
     p{
-        color: var(--battleship-gray);
+        color: variables.$black-light ;
         margin-bottom: 1rem;
         line-height: 25px;
     }
     h3{
+        color: variables.$yinmn-blue;
         margin-bottom: .5rem;
-        font-size: clamp(1.2rem,3vw,1.6rem);
+        font-weight: 600;
+        font-size: 2.5rem;
+        font-size: clamp(1.2rem,3vw,1.8rem);
     }
 }
 
@@ -101,12 +99,8 @@
 /* -------------------------- */
 
 .cont__text--dos {
-    width: 40%;
+    width: 50%;
     padding-right: clamp(20px,7vw,100px);
-}
-
-.cont__text--dos{
-    width: 60%;
 }
 
 .cont__img--dos {

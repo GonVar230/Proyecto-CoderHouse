@@ -15,11 +15,10 @@
         height: auto;
         background-color: variables.$uranian-blue;
         border-radius: 1rem 1rem 0 0;
-        @include mixin.flex-container(null,null,end);
         img{
-                width: 100%;
-                height: 260px;
-                object-fit: cover;
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
         }
     }
 }
@@ -49,7 +48,6 @@
 
 // cards de especialidades
 .contenedor__cards--especialidades{
-    @include mixin.flex-container(null,null,center);
     @include mixin.cards-nosotros;
     gap: 1rem;
     margin-top: 2rem;

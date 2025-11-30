@@ -1,0 +1,80 @@
+@media screen and (max-width:900px) {
+    /* Agregando accesibilidad navbar para mobile */
+    .navbar{
+        position: fixed;
+        display: flex;
+        box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+        width: 100%;
+        top: 0;
+    }
+    /* INDEX */
+    .img__main {
+        height: 550px;
+    }
+    .color__img {
+        height: 550px;
+    }
+    .text__img--direccion,.text__img--direccion--dos {
+        flex-direction: column;
+    }
+    .cont__text,
+    .cont__text--dos {
+        width: 100%;
+        padding-right: 0;
+        margin-top: .8rem;
+    }
+    .cont__img,
+    .cont__img--dos {
+        width: 100%;
+    }
+    .cont__img--dos {
+        grid-template-columns: repeat(1, 1fr); 
+        margin-top: 1rem;
+        place-items: center;
+    }
+    .cont__img img{
+        max-width: 100%;
+    }
+    /* CONTACTO */
+    .main__contacto {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr 350px;
+        padding: 1rem;
+    }
+    .ubicando__form--contacto{
+        min-width: 100%;
+    }
+    .text__contacto {
+        grid-column: 1;
+        grid-row: 1;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .ubicando__form--contacto {
+        grid-column: 1;
+        grid-row: 2;
+        margin-right: 0;
+        padding: 2rem;
+    }
+    .contacto__mapa {
+        grid-column: 1;
+        grid-row: 3;
+        figure img {
+            width: 100%;
+            height: auto;
+        }
+        }
+    .contacto__informacions {
+        grid-column: 1;
+        grid-row: 4;
+        }
+    /* padding para que el navbar no tape el texto al inicio en cada pagina */
+    .principal__socios,.principal__nosotros,.main__turnos,.main__contacto,.principal__turnos{
+        margin-top: 170px;
+    }
+    .ubicando__form--reservas{
+        margin: 2rem 1rem;
+    }
+}
+
+
