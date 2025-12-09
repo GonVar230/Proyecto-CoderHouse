@@ -33,11 +33,12 @@ footer{
 .contacto__footer {
     display: flex;
     gap: clamp(1rem, 5vw, 2rem);
+    margin: 0 1.2rem;
     cursor: pointer;
     color: variables.$antiflash-white;
 
     i {
-        font-size: clamp(1rem, 2vw, 1.5rem);
+        font-size: clamp(1.2rem, 2vw, 1.5rem);
         transition: all 0.3s ease;
 
         &:hover {

@@ -10,7 +10,7 @@
     padding: 0 1rem;
 
     h2{
-        font-size: 2rem;
+        font-size: clamp(1.5rem,5vw,2rem);
         color: variables.$yinmn-blue;
         font-weight: 500;
         margin-bottom: 1rem;
@@ -32,16 +32,16 @@
 
 .carta__beneficio {
     background-color: variables.$white;
-    padding: 2rem;
+    padding: clamp(1rem,4vw,2rem);
     border-radius: 10px;
-    min-height: 200px;
+    min-height: 220px;
     @include mixin.flex-container(column,start,start);
     text-align: start;
     p{
         line-height: 26px;
         letter-spacing: .5px;
-        padding: 0 1rem 1rem 2.1rem;
-        font-size: 1.1rem;
+        padding: 0 0rem 0rem 2.1rem;
+        font-size: clamp(1rem,3vw,1.1rem);
         color: variables.$black-light;
     }
 }
@@ -52,12 +52,12 @@
     padding-bottom: 1rem;
     i{
         color: variables.$yinmn-blue;
-        font-size: 1.5rem;
+        font-size: clamp(1.2rem,4vw,1.4rem);
         transform: translateY(-3px);
     }
     h3{
         color: variables.$yinmn-blue;
-        font-size: 1.5rem;
+        font-size: clamp(1.2rem,4vw,1.5em);
     }
 }
 
@@ -78,7 +78,7 @@
 .carta__beneficio--text{
     h3{
         color: variables.$yinmn-blue;
-        font-size: 1.4rem;
+        font-size: clamp(1.2rem,4vw,1.4rem);
         padding-bottom: 1rem;
     }
     p{

@@ -118,16 +118,17 @@ header ul {
   z-index: 2;
 }
 .text__section--arriba h2 {
-  margin-bottom: 10px;
-  font-size: clamp(1.7rem, 5vw, 2.5rem);
+  margin-bottom: 0.5rem;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
   letter-spacing: 1px;
   color: #f0f4fa;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 .text__section--arriba p {
-  margin-bottom: 35px;
+  margin-bottom: 1.2rem;
   color: #f0f4fa;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
 }
 
 /* -------------------------- */
@@ -164,13 +165,13 @@ header ul {
   color: #333333;
   margin-bottom: 1rem;
   line-height: 25px;
+  font-size: clamp(0.9rem, 3vw, 1rem);
 }
 .cont__text h3, .cont__text--dos h3 {
   color: #274c77;
   margin-bottom: 0.5rem;
   font-weight: 600;
-  font-size: 2.5rem;
-  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  font-size: clamp(1.6rem, 4vw, 2rem);
 }
 
 /* -------------------------- */
@@ -292,7 +293,7 @@ header ul {
   font-weight: 600;
 }
 .separador div p {
-  font-size: 2rem;
+  font-size: clamp(1.3rem, 4vw, 2rem);
   color: #f0f4fa;
   margin-bottom: 1rem;
 }
@@ -315,13 +316,13 @@ header ul {
   font-weight: 600;
 }
 .principal__socios div h1 {
-  font-size: 2.9rem;
+  font-size: clamp(2rem, 5vw, 2.8rem);
   color: #274c77;
   margin-bottom: 15px;
 }
 .principal__socios div p {
   color: #f0f4fa;
-  font-size: 1.4rem;
+  font-size: clamp(1.1rem, 3vw, 1.4rem);
   margin-bottom: 1.3rem;
 }
 
@@ -343,13 +344,13 @@ header ul {
   font-weight: 600;
 }
 .principal__nosotros div h1, .titulo__especialidades div h1 {
-  font-size: 2.9rem;
+  font-size: clamp(2rem, 5vw, 2.8rem);
   color: #274c77;
   margin-bottom: 1rem;
 }
 .principal__nosotros div p, .titulo__especialidades div p {
   color: #f0f4fa;
-  font-size: 1.4rem;
+  font-size: clamp(1.1rem, 3vw, 1.4rem);
 }
 
 .text__turnos {
@@ -372,12 +373,12 @@ header ul {
 .text__turnos h1 {
   color: #274c77;
   margin-top: 1rem;
-  font-size: 3rem;
+  font-size: clamp(2.3rem, 7vw, 2.8rem);
 }
 .text__turnos p {
   color: #fff;
-  margin-bottom: 2rem;
-  font-size: 1.3rem;
+  margin-bottom: clamp(1.3rem, 4vw, 2rem);
+  font-size: clamp(1.1rem, 3vw, 1.4rem);
 }
 
 .encabezado__socios {
@@ -389,7 +390,7 @@ header ul {
   padding: 0 1rem;
 }
 .encabezado__socios h2 {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 5vw, 2rem);
   color: #274c77;
   font-weight: 500;
   margin-bottom: 1rem;
@@ -411,9 +412,9 @@ header ul {
 
 .carta__beneficio {
   background-color: #fff;
-  padding: 2rem;
+  padding: clamp(1rem, 4vw, 2rem);
   border-radius: 10px;
-  min-height: 200px;
+  min-height: 220px;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -423,8 +424,8 @@ header ul {
 .carta__beneficio p {
   line-height: 26px;
   letter-spacing: 0.5px;
-  padding: 0 1rem 1rem 2.1rem;
-  font-size: 1.1rem;
+  padding: 0 0rem 0rem 2.1rem;
+  font-size: clamp(1rem, 3vw, 1.1rem);
   color: #333333;
 }
 
@@ -436,12 +437,12 @@ header ul {
 }
 .ubicacion__carta--beneficio i {
   color: #274c77;
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 4vw, 1.4rem);
   transform: translateY(-3px);
 }
 .ubicacion__carta--beneficio h3 {
   color: #274c77;
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 4vw, 1.5em);
 }
 
 .carta__beneficio--img, .carta__beneficio--text {
@@ -456,7 +457,7 @@ header ul {
 
 .carta__beneficio--text h3 {
   color: #274c77;
-  font-size: 1.4rem;
+  font-size: clamp(1.2rem, 4vw, 1.4rem);
   padding-bottom: 1rem;
 }
 .carta__beneficio--text p {
@@ -498,19 +499,24 @@ header ul {
 .card__medico div {
   border: 1px solid #a3cef1;
   border-radius: 0 0 1rem 1rem;
-  padding: 1rem;
+  padding: clamp(0.8rem, 2vw, 1rem);
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .card__medico div h3 {
   color: var(--yinmn-blue);
-  font-size: 1.3rem;
+  font-size: clamp(1.1rem, 4vw, 1.3rem);
   padding-bottom: 0.3rem;
 }
 .card__medico div p {
   color: #333333;
   padding-bottom: 0.3rem;
+  font-size: clamp(0.9rem, 3vw, 1.1rem);
 }
 .card__medico div span {
-  font-size: 1.3rem;
+  font-size: clamp(1.1rem, 5vw, 1.3rem);
   color: #274c77;
   font-weight: 600;
 }
@@ -554,7 +560,7 @@ header ul {
   text-align: center;
   font-weight: bold;
   color: #274c77;
-  font-size: 1.7rem;
+  font-size: clamp(1.1rem, 3vw, 1.7rem);
   padding-top: 1rem;
 }
 
@@ -663,15 +669,21 @@ header ul {
 }
 .text__contacto h1 {
   color: #274c77;
-  font-size: 3rem;
+  font-size: clamp(1.8rem, 7vw, 3rem);
   margin-bottom: 0.5rem;
+  font-weight: 400;
 }
-.text__contacto span {
+.text__contacto .primer-span {
+  color: #274c77;
+  font-weight: bold;
+}
+.text__contacto .segundo-span {
   color: #a3cef1;
+  font-weight: bold;
 }
 .text__contacto p {
   color: #333333;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 4vw, 1.2rem);
 }
 
 .ubicando__form--contacto {
@@ -763,11 +775,12 @@ footer {
 .contacto__footer {
   display: flex;
   gap: clamp(1rem, 5vw, 2rem);
+  margin: 0 1.2rem;
   cursor: pointer;
   color: #f0f4fa;
 }
 .contacto__footer i {
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
   transition: all 0.3s ease;
 }
 .contacto__footer i:hover {
@@ -815,13 +828,14 @@ footer {
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     top: 0;
+    min-height: 130px;
   }
   /* INDEX */
-  .img__main {
-    height: 550px;
+  .img__section .color__img {
+    height: 570px;
   }
-  .color__img {
-    height: 550px;
+  .img__section img {
+    height: 570px;
   }
   .text__img--direccion, .text__img--direccion--dos {
     flex-direction: column;
@@ -832,7 +846,9 @@ footer {
     padding-right: 0;
     margin-top: 0.8rem;
   }
-  .cont__img,
+  .cont__img {
+    width: 75%;
+  }
   .cont__img--dos {
     width: 100%;
   }
@@ -841,7 +857,7 @@ footer {
     margin-top: 1rem;
     place-items: center;
   }
-  .cont__img img {
+  .cont__img figure img {
     max-width: 100%;
   }
   /* CONTACTO */
@@ -879,10 +895,58 @@ footer {
   }
   /* padding para que el navbar no tape el texto al inicio en cada pagina */
   .principal__socios, .principal__nosotros, .main__turnos, .main__contacto, .principal__turnos {
-    margin-top: 170px;
+    margin-top: 150px;
   }
   .ubicando__form--reservas {
     margin: 2rem 1rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* INDEX */
+  .img__section .color__img {
+    height: 500px;
+  }
+  .img__section img {
+    height: 500px;
+  }
+  .cont__img--dos {
+    width: 50%;
+  }
+  .cont__img--dos figure img {
+    height: 200px;
+  }
+  .carta__beneficio {
+    min-height: 150px;
+  }
+  .card__medico {
+    width: 210px;
+    height: 420px;
+  }
+  .card__medico figure {
+    max-height: 210px;
+    display: flex;
+    align-items: end;
+  }
+  .card__medico figure img {
+    height: 210px;
+    object-fit: cover;
+  }
+  .card__especialidades {
+    height: 150px;
+    width: 200px;
+    padding: 1rem;
+    flex-direction: column;
+  }
+  .card__especialidades figure {
+    width: 120px;
+    height: 120px;
+  }
+  .card__especialidades figure img {
+    scale: 0.9;
+    transform: translateY(10px);
+  }
+  .card__especialidades .text__especialidad {
+    padding-top: 0;
   }
 }
 
