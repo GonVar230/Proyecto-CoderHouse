@@ -84,7 +84,26 @@
     .ubicando__form--reservas{
         margin: 2rem 1rem;
     }
+
+        .card__especialidades {
+        height: 150px;
+        width: 200px;
+        padding: 1rem;
+        flex-direction: column;
+        figure{
+            width: 120px; 
+            height: 120px;
+            img{
+                scale: .9;
+                transform: translateY(10px);
+            }
+        }
+        .text__especialidad  {
+            padding-top: 0;
+        }
+    }
 }
+
 
 
 @media screen and (max-width:700px) {
@@ -121,24 +140,6 @@
             height: 210px;
             object-fit: cover;
             }
-        }
-    }
-
-    .card__especialidades {
-        height: 150px;
-        width: 200px;
-        padding: 1rem;
-        flex-direction: column;
-        figure{
-            width: 120px; 
-            height: 120px;
-            img{
-                scale: .9;
-                transform: translateY(10px);
-            }
-        }
-        .text__especialidad  {
-            padding-top: 0;
         }
     }
 }

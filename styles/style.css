@@ -42,9 +42,10 @@ header ul {
 .nav__link {
   position: relative;
   text-decoration: none;
-  color: #a3cef1;
+  color: #6096ba;
   cursor: pointer;
   transition: all 0.4s ease;
+  font-size: 1.2rem;
 }
 .nav__link::after {
   content: "";
@@ -224,9 +225,10 @@ header ul {
 .cont__text--dos a, .carta__beneficio--text a {
   position: relative;
   text-decoration: none;
-  color: #a3cef1;
+  color: #6096ba;
   cursor: pointer;
   transition: all 0.4s ease;
+  font-size: 1.2rem;
 }
 .cont__text--dos a::after, .carta__beneficio--text a::after {
   content: "";
@@ -560,7 +562,7 @@ header ul {
   text-align: center;
   font-weight: bold;
   color: #274c77;
-  font-size: clamp(1.1rem, 3vw, 1.7rem);
+  font-size: clamp(1.2rem, 2vw, 1.7rem);
   padding-top: 1rem;
 }
 
@@ -900,6 +902,23 @@ footer {
   .ubicando__form--reservas {
     margin: 2rem 1rem;
   }
+  .card__especialidades {
+    height: 150px;
+    width: 200px;
+    padding: 1rem;
+    flex-direction: column;
+  }
+  .card__especialidades figure {
+    width: 120px;
+    height: 120px;
+  }
+  .card__especialidades figure img {
+    scale: 0.9;
+    transform: translateY(10px);
+  }
+  .card__especialidades .text__especialidad {
+    padding-top: 0;
+  }
 }
 @media screen and (max-width: 700px) {
   /* INDEX */
@@ -930,23 +949,6 @@ footer {
   .card__medico figure img {
     height: 210px;
     object-fit: cover;
-  }
-  .card__especialidades {
-    height: 150px;
-    width: 200px;
-    padding: 1rem;
-    flex-direction: column;
-  }
-  .card__especialidades figure {
-    width: 120px;
-    height: 120px;
-  }
-  .card__especialidades figure img {
-    scale: 0.9;
-    transform: translateY(10px);
-  }
-  .card__especialidades .text__especialidad {
-    padding-top: 0;
   }
 }
 
