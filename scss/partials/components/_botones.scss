@@ -1,5 +1,6 @@
 @use "../utilities/mixin";
 @use "../utilities/variables";
+@use "../utilities/extend";
 
 // Botones del  index
 .text__section--arriba a {
@@ -20,7 +21,7 @@
 
 // El segundo es del html de socios
 .cont__text--dos a,.carta__beneficio--text a {
-    @include mixin.link-underline;
+    @extend %link-underline;
 }
 
 

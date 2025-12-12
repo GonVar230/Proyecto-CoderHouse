@@ -17,9 +17,55 @@ body {
   background-color: #f0f4fa;
 }
 
-.navbar {
+.direccion__footer, .main__contacto, .section__cards--medicos, .contenedor__cards--especialidades, .encabezado__socios, .grid__socios, .text__img--direccion, .text__img--direccion--dos, .navbar {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+.cont__text--dos a, .carta__beneficio--text a, .nav__link {
+  position: relative;
+  text-decoration: none;
+  color: #6096ba;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  font-size: 1.2rem;
+}
+.cont__text--dos a::after, .carta__beneficio--text a::after, .nav__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #a3cef1;
+  transition: width 0.4s ease;
+}
+.cont__text--dos a:hover, .carta__beneficio--text a:hover, .nav__link:hover {
+  transform: scale(1.1);
+  font-weight: bold;
+}
+.cont__text--dos a:hover::after, .carta__beneficio--text a:hover::after, .nav__link:hover::after {
+  width: 100%;
+}
+
+.form__reservas label, .form__contacto label {
+  color: #274c77;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: start;
+  margin-left: 0.5rem;
+}
+
+.form__reservas input, .form__contacto input {
+  border: none;
+  border-bottom: 2px solid #a3cef1;
+  padding: 10px 0 10px 10px;
+  border-radius: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.navbar {
   background-color: #f0f4fa;
   height: 15dvh;
   z-index: 10;
@@ -37,32 +83,6 @@ header ul {
 }
 .link__logo:hover {
   transform: scale(1.1);
-}
-
-.nav__link {
-  position: relative;
-  text-decoration: none;
-  color: #6096ba;
-  cursor: pointer;
-  transition: all 0.4s ease;
-  font-size: 1.2rem;
-}
-.nav__link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  width: 0;
-  background-color: #a3cef1;
-  transition: width 0.4s ease;
-}
-.nav__link:hover {
-  transform: scale(1.1);
-  font-weight: bold;
-}
-.nav__link:hover::after {
-  width: 100%;
 }
 
 .navbar-toggler, .btn-close {
@@ -84,12 +104,12 @@ header ul {
 
 .img__section {
   position: relative;
+  margin: clamp(2rem, 5vw, 4rem) 0;
 }
 .img__section .img__main {
   width: 100%;
   height: 650px;
   opacity: 1;
-  border-radius: 10px;
   transition: all 0.4s ease;
 }
 .img__section .color__img {
@@ -136,8 +156,6 @@ header ul {
 /* text img section main uno y dos*/
 /* -------------------------- */
 .text__img--direccion, .text__img--direccion--dos {
-  max-width: 1140px;
-  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -145,6 +163,10 @@ header ul {
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding: 0 1rem;
+}
+
+.text__img--direccion--dos {
+  margin-bottom: clamp(2rem, 5vw, 4rem);
 }
 
 .cont__text {
@@ -222,32 +244,6 @@ header ul {
   background-color: #6096ba;
 }
 
-.cont__text--dos a, .carta__beneficio--text a {
-  position: relative;
-  text-decoration: none;
-  color: #6096ba;
-  cursor: pointer;
-  transition: all 0.4s ease;
-  font-size: 1.2rem;
-}
-.cont__text--dos a::after, .carta__beneficio--text a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  width: 0;
-  background-color: #a3cef1;
-  transition: width 0.4s ease;
-}
-.cont__text--dos a:hover, .carta__beneficio--text a:hover {
-  transform: scale(1.1);
-  font-weight: bold;
-}
-.cont__text--dos a:hover::after, .carta__beneficio--text a:hover::after {
-  width: 100%;
-}
-
 .principal__socios div a {
   text-decoration: none;
   color: #fff;
@@ -287,6 +283,7 @@ header ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: clamp(2rem, 5vw, 4rem) 0;
 }
 .separador div {
   max-width: 700px;
@@ -384,8 +381,6 @@ header ul {
 }
 
 .encabezado__socios {
-  max-width: 1140px;
-  margin: 0 auto;
   margin-top: 1rem;
   margin-bottom: 1rem;
   text-align: center;
@@ -406,8 +401,6 @@ header ul {
 
 .grid__socios {
   display: grid;
-  max-width: 1140px;
-  margin: 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 1rem;
 }
@@ -473,8 +466,6 @@ header ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1140px;
-  margin: 0 auto;
   flex-wrap: wrap;
   gap: 1rem;
   padding: 0 1rem;
@@ -527,8 +518,6 @@ header ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1140px;
-  margin: 0 auto;
   flex-wrap: wrap;
   gap: 1rem;
   padding: 0 1rem;
@@ -577,23 +566,6 @@ header ul {
 
 .diferencial__img {
   transform: scale(0.9);
-}
-
-.form__reservas label, .form__contacto label {
-  color: #274c77;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-  font-size: 1.2rem;
-  text-align: start;
-  margin-left: 0.5rem;
-}
-
-.form__reservas input, .form__contacto input {
-  border: none;
-  border-bottom: 2px solid #a3cef1;
-  padding: 10px 0 10px 10px;
-  border-radius: 2rem;
-  margin-bottom: 1.5rem;
 }
 
 .ubicando__form--reservas {
@@ -655,8 +627,6 @@ header ul {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 120px repeat(2, 1fr);
   gap: 1rem;
-  max-width: 1140px;
-  margin: 0 auto;
   padding: 2rem;
 }
 
@@ -749,8 +719,6 @@ footer {
 }
 
 .direccion__footer {
-  max-width: 1140px;
-  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

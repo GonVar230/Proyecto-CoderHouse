@@ -1,9 +1,10 @@
 @use "../utilities/variables";
 @use "../utilities/mixin";
+@use "../utilities/extend";
 
 // complementando el separador
 .encabezado__socios {
-    @include mixin.container;
+    @extend %container;
     margin-top: 1rem;
     margin-bottom: 1rem;
     text-align: center;
@@ -25,7 +26,7 @@
 
 .grid__socios {
     display: grid;
-    @include mixin.container;
+    @extend %container;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 1rem;
 }

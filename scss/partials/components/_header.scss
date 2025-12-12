@@ -1,8 +1,9 @@
 @use "../utilities/variables";
 @use "../utilities/mixin";
+@use "../utilities/extend";
 
 .navbar{
-    @include mixin.container;
+    @extend %container;
     background-color: variables.$antiflash-white;
     height: 15dvh;
     z-index: 10;
@@ -26,7 +27,7 @@ header{
 }
 
 .nav__link{
-    @include mixin.link-underline;
+    @extend %link-underline;
 }
 
 .navbar-toggler,.btn-close {

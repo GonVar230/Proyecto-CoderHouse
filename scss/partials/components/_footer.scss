@@ -1,5 +1,6 @@
 @use "../utilities/mixin";
 @use "../utilities/variables";
+@use "../utilities/extend";
 
 footer{
     height: auto;
@@ -10,7 +11,7 @@ footer{
 }
 
 .direccion__footer {
-    @include mixin.container;
+    @extend %container;
     @include mixin.flex-container(row,space-between,center);
     flex-wrap: wrap;
     height: 120px;

@@ -1,40 +1,5 @@
 @use "../utilities/variables";
-
-// para centrar
-@mixin container {
-    max-width: 1140px;
-    margin: 0 auto;
-}
-
-// Decoracion para links 
-@mixin link-underline {
-    position: relative;
-    text-decoration: none;
-    color: variables.$air-superiority-blue;
-    cursor: pointer;
-    transition: all 0.4s ease;
-    font-size: 1.2rem;
-
-    &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        height: 2px;
-        width: 0;
-        background-color: variables.$uranian-blue;
-        transition: width 0.4s ease;
-    }
-
-        &:hover {
-            transform: scale(1.1);
-            font-weight: bold;
-
-        &::after {
-            width: 100%;
-        }
-    }
-}
+@use "../utilities/extend";
 
 // Botones en general
 @mixin btn-basic ($color,$background,$hover){
@@ -80,7 +45,7 @@
 
 @mixin cards-nosotros{
     @include flex-container(null, center, center);
-    @include container;
+    @extend %container;
     flex-wrap: wrap;
     gap: 1rem;
     padding: 0 1rem;

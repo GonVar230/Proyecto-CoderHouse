@@ -1,9 +1,11 @@
 @use "../utilities/variables";
 @use "../utilities/mixin";
+@use "../utilities/extend";
 
 // Separador del index
 .separador{
     @include mixin.separador(2rem);
+    margin: clamp(2rem,5vw,4rem) 0;
     div{
         @include mixin.centrar-separador(700px);
         p {
